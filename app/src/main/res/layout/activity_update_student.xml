@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scroll_id"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_update_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mostafa.attender.UpdateStudent"
+        android:background="@drawable/background2"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:layout_marginTop="55dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_id"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/student_updateID" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:text="@string/edit_data"
+                android:layout_gravity="center"
+                android:background="@drawable/buttun_selector"
+                android:onClick="editStudent"
+                android:id="@+id/editStudent_id"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/edit_attendance" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:padding="10dp"
+                android:text="@string/delete_data"
+                android:layout_gravity="center"
+                android:background="@drawable/buttun_selector"
+                android:onClick="deleteStudent"
+                android:id="@+id/deleteStudent_id"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/delete_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:id="@+id/dataFrame">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/update_student_name"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:text="@string/day_attendance_statue"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="4dp"
+                    android:text="@string/get_date"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttun_selector"
+                    android:onClick="dataPicker"
+                    android:id="@+id/choose_dateID"
+                    android:layout_weight="0.5"
+                    android:contentDescription="@string/get_date" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_class"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="21sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:id="@+id/no_classID"
+                    android:visibility="gone"
+                    android:layout_weight="0.5" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioAttendance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_weight="0.5"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioAbsent"
+                        android:text="@string/absent"
+                        android:textSize="21sp"
+                        android:textColor="@color/absentColor"
+                        android:contentDescription="@string/absent_button" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioPresent"
+                        android:text="@string/attend"
+                        android:textSize="21sp"
+                        android:textColor="@color/presentColor"
+                        android:contentDescription="@string/attend_button" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:text="@string/save_edit"
+                android:layout_gravity="center"
+                android:background="@drawable/buttun_selector"
+                android:onClick="doneEdit"
+                android:id="@+id/done_edit"
+                android:layout_weight="0.5"
+                android:layout_marginTop="45dp"
+                android:contentDescription="@string/save_edit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

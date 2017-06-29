@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scroll_id"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_teacher_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mostafa.attender.TeacherLogin"
+        android:background="@drawable/background2"
+        android:orientation="vertical">
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/login_frame"
+            android:visibility="visible"
+            android:id="@+id/login_frame_id" />
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/register_frame"
+            android:visibility="gone"
+            android:id="@+id/register_frame_id" />
+
+    </LinearLayout>
+</ScrollView>

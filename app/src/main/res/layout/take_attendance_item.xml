@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:padding="4dp"
+                android:id="@+id/student_attendance_name"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:padding="4dp"
+                android:id="@+id/student_attendance_ID"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/take_attendance_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="4">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_absent"
+                android:text="@string/absent"
+                android:textSize="21sp"
+                android:textColor="@color/absentColor"
+                android:contentDescription="@string/absent_button" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_present"
+                android:text="@string/attend"
+                android:textSize="21sp"
+                android:textColor="@color/presentColor"
+                android:contentDescription="@string/attend_button" />
+        </RadioGroup>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

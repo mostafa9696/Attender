@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_student_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mostafa.attender.StudentLogin"
+    android:background="@drawable/background2">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_id"
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:padding="16dp"
+            android:textSize="22sp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/student_loginId" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:background="@drawable/buttun_selector"
+        android:onClick="login"
+        android:id="@+id/loginIn_id" />
+</LinearLayout>

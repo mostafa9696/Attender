@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:layout_marginTop="60dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/teacher_name_loginId" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:layout_marginTop="30dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/enter_password"
+                android:padding="16dp"
+                android:textSize="22sp"
+                android:textColor="@color/textColor"
+                android:id="@+id/teacher_pass_loginId" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/login"
+            android:layout_gravity="center"
+            android:background="@drawable/buttun_selector"
+            android:onClick="login"
+            android:id="@+id/loginIn_id"
+            android:contentDescription="@string/login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_text_id"
+            android:padding="7dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/register"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:onClick="register"
+            android:contentDescription="@string/teacher_register" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "310964222103",
+    "firebase_url": "https://attender-49d46.firebaseio.com",
+    "project_id": "attender-49d46",
+    "storage_bucket": "attender-49d46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310964222103:android:743274be7675ad49",
+        "android_client_info": {
+          "package_name": "com.example.mostafa.attender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310964222103-5prd1unoq88vgn8e82c2idovb1d8mi0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuU3HR9PHylCWuAENZ8a2VNTjVGxtBth4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

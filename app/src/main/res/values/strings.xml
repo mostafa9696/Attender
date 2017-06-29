@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name" translatable="false">Attender</string>
+
+    <string name="loginAs" translatable="false">Login As</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="enter_name">User Name </string>
+    <string name="enter_subject">Subject </string>
+    <string name="enter_password">Password </string>
+    <string name="enter_confirm_password">Confirm Password </string>
+    <string name="sign_in">Sign In </string>
+    <string name="register">Not register yet , create new account !</string>
+    <string name="login">Log In</string>
+    <string name="data_miss">please fill all above fields !</string>
+    <string name="invalid_login">The password or user name is incorrect!</string>
+    <string name="invalid_login_student">The ID is incorrect!</string>
+    <string name="invalid_password">The password and confirm password not matching !</string>
+    <string name="name_exist">This user name is already exist , please enter another one</string>
+    <string name="about_app_apiKey" translatable="false">https://api.myjson.com/bins/whinv</string>
+    <string name="about_app" translatable="false">About app</string>
+    <string name="creat_email">Account created successfully </string>
+    <string name="fab_add">Add new student</string>
+    <string name="update_student">Update student data</string>
+    <string name="take_ateendance">Take Attendance</string>
+    <string name="add_student">Add Student</string>
+    <string name="enter_id">Student ID</string>
+    <string name="student_name">Student Name</string>
+    <string name="subject_exist">This student is aleardy enrolled for this course</string>
+    <string name="ID_exist">This ID is registered before , please enter another ID</string>
+    <string name="ID_not_exist">This is an invalid ID !</string>
+    <string name="app_guid" translatable="false">Teacher login first then enroll students to his course by enter their name and ID then he can take attendance for them , edit attendance status at specific day or un-enroll student from his course , Student login after teacher enroll him to course by enter his ID then he can know his absence and presence count for each subject.</string>
+    <string name="student_added">Student added successfully</string>
+    <string name="edit_data">Edit</string>
+    <string name="get_date">Choose Date</string>
+    <string name="no_class">No class at this day</string>
+    <string name="absent">Absent</string>
+    <string name="attend">Present</string>
+    <string name="absent_button">Absent button</string>
+    <string name="attend_button">Present button</string>
+    <string name="times">times</string>
+    <string name="save_edit">Save</string>
+    <string name="delete_data">Unenroll</string>
+    <string name="delete_student">Do you want to unenroll this student from course?</string>
+    <string name="delete_title">Unenroll student</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="student_deleted">Student unenroll from course successfully</string>
+    <string name="no_internet">Can not connect to the internet</string>
+    <string name="day_attendance_statue">Pick day to get attendance status at it</string>
+    <string name="student_enroll_course">Student enroll to course successfully</string>
+    <string name="welcome_message">Welcome</string>
+    <string name="logging_wait">Please Wait For Logging...</string>
+    <string name="id">ID</string>
+    <string name="attendance_check">there is a student who not take his attendance !</string>
+    <string name="update_student_false">This ID is invalid or it is not enrolled to your course !</string>
+    <string name="update_student_attendance">Update student attendance successfully</string>
+    <string name="no_change">No changes at this student occurred</string>
+    <string name="edit_attendance">edit student attendance</string>
+    <string name="teacher_login">login as teacher</string>
+    <string name="student_login">login as student</string>
+    <string name="teacher_register">create new account</string>
+    <string name="attendance_taken">Attendance was taked successfully</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:id="@+id/appWidget">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:textColor="@color/textColor"
+            android:id="@+id/app_name_textView"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="@string/student"
+        android:background="@drawable/buttun_selector"
+        android:id="@+id/studentLogin_widget"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/loginAs"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor"
+        android:contentDescription="@string/student_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginAs"
+        android:layout_gravity="bottom|center"
+        android:textStyle="bold|italic"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginAs"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher"
+        android:background="@drawable/buttun_selector"
+        android:id="@+id/teacherLogin_widget"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/studentLogin_widget"
+        android:layout_alignStart="@+id/studentLogin_widget"
+        android:contentDescription="@string/teacher_login" />
+</RelativeLayout>
