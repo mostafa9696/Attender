@@ -1,7 +1,6 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.mostafa.attender.R;
+import com.example.mostafa.attender.Model.Student;
+import com.example.mostafa.attender.Model.Subject;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

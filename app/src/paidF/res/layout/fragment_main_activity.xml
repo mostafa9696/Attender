@@ -4,9 +4,10 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mostafa.attender.MainActivity"
+    tools:context="com.example.mostafa.attender.Activity.MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/home_background"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
         android:id="@+id/teacherLogin"
         android:onClick="teacgerLogin"
         android:textSize="18sp"
+        android:gravity="center"
         android:contentDescription="@string/teacher_login" />
 
     <Button
@@ -39,6 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/student"
         android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginTop="12dp"
         android:padding="12dp"
         android:background="@drawable/buttun_selector"
@@ -55,7 +58,9 @@
         android:textStyle="bold|italic"
         android:textSize="45sp"
         android:layout_marginTop="40dp"
-        android:id="@+id/loginAs" />
+        android:id="@+id/loginAs"
+        android:textColor="@color/textColor"
+        />
 
     <ProgressBar
         android:layout_marginTop="6dp"

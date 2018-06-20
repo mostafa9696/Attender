@@ -1,4 +1,4 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Activity;
 
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,10 @@ import android.view.View;
 
 import android.widget.Toast;
 
+import com.example.mostafa.attender.Model.Student;
+import com.example.mostafa.attender.Model.Subject;
+import com.example.mostafa.attender.R;
+import com.example.mostafa.attender.Adapter.TakeAttendanceAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -168,7 +172,8 @@ public class TakeStudentAttendance extends AppCompatActivity {
 
                 }
             });
-            Toast.makeText(getApplicationContext(), getString(R.string.attendance_taken), Toast.LENGTH_LONG).show();
+           Toast.makeText(getApplicationContext(), getString(R.string.attendance_taken), Toast.LENGTH_LONG).show();
+            finish();
         } else {
             Toast.makeText(getApplicationContext(), getResources().getString(R.string.attendance_check), Toast.LENGTH_LONG).show();
         }

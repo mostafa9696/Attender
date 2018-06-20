@@ -1,6 +1,5 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Activity;
 
-import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -20,13 +19,13 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mostafa.attender.R;
+import com.example.mostafa.attender.Model.Teacher;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
 
 public class TeacherLogin extends AppCompatActivity {
     View logInFrame, registerFrame;

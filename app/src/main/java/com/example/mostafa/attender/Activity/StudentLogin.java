@@ -1,4 +1,4 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Activity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.mostafa.attender.R;
+import com.example.mostafa.attender.Model.Student;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

@@ -5,7 +5,7 @@
     android:id="@+id/activity_teacher_functions"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mostafa.attender.TeacherFunctions"
+    tools:context="com.example.mostafa.attender.Activity.TeacherFunctions"
     android:fitsSystemWindows="true"
     android:background="@drawable/background2">
 

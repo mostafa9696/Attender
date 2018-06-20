@@ -1,4 +1,4 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
+import com.example.mostafa.attender.Model.Student;
+import com.example.mostafa.attender.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

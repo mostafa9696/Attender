@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.mostafa.attender.StudentLogin"
+    tools:context="com.example.mostafa.attender.Activity.StudentLogin"
     android:background="@drawable/background2">
 
     <android.support.design.widget.TextInputLayout

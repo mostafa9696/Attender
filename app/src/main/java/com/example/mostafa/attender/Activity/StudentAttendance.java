@@ -1,4 +1,4 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Activity;
 
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
+
+import com.example.mostafa.attender.Adapter.AttendanceAdapter;
+import com.example.mostafa.attender.R;
+import com.example.mostafa.attender.Model.Student;
+import com.example.mostafa.attender.Model.Subject;
 
 import java.util.ArrayList;
 import java.util.List;

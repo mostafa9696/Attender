@@ -5,7 +5,7 @@
     android:id="@+id/activity_add_student"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mostafa.attender.AddStudent"
+    tools:context="com.example.mostafa.attender.Activity.AddStudent"
     android:background="@drawable/background2"
     android:orientation="vertical">
 

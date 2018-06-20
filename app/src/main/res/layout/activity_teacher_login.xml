@@ -9,7 +9,7 @@
         android:id="@+id/activity_teacher_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.mostafa.attender.TeacherLogin"
+        tools:context="com.example.mostafa.attender.Activity.TeacherLogin"
         android:background="@drawable/background2"
         android:orientation="vertical">
 

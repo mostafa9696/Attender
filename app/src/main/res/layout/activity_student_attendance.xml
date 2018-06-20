@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.mostafa.attender.StudentAttendance"
+    tools:context="com.example.mostafa.attender.Activity.StudentAttendance"
     android:background="@drawable/background2">
 
     <TextView
@@ -24,10 +24,9 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="@android:color/darker_gray"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp" />
+        android:layout_height="2dp"
+        android:background="#a99898"
+        />
 
     <TextView
         android:layout_width="match_parent"

@@ -9,7 +9,7 @@
         android:id="@+id/activity_update_student"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.mostafa.attender.UpdateStudent"
+        tools:context="com.example.mostafa.attender.Activity.UpdateStudent"
         android:background="@drawable/background2"
         android:orientation="vertical">
 

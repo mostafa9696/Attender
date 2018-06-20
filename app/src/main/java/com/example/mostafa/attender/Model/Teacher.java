@@ -1,4 +1,4 @@
-package com.example.mostafa.attender;
+package com.example.mostafa.attender.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
